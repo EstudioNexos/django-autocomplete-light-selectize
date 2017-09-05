@@ -83,7 +83,8 @@
             plugins: ['remove_button'],
             delimiter: element.attr('data-tags') ? ',' : null,
             allowEmptyOption: ! element.is('required'),
-            preload: false,
+            preload: 'focus',
+            hideSelected: true,
             load: ajax,
             render: {
                 option: function(data, escape) {
