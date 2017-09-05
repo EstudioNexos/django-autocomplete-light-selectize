@@ -85,6 +85,7 @@
             allowEmptyOption: ! element.is('required'),
             preload: 'focus',
             hideSelected: true,
+            selectOnTab: true,
             load: ajax,
             render: {
                 option: function(data, escape) {
